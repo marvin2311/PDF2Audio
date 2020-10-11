@@ -8,7 +8,7 @@ book = open('the_monk_who_sold_his_ferrari.pdf','rb')
 pdfReader = PyPDF2.PdfFileReader(book)
 
 
-# initialize the speaker to convert text to speech, set properties for voice and reading pace
+# initialize the speaker to convert text to speech, set properties for voice and reading pace (for macOS Catalina)
 speaker = pyttsx3.init()
 
 speaker.setProperty('voice', "com.apple.speech.synthesis.voice.Alex")
